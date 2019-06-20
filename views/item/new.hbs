@@ -1,0 +1,25 @@
+<h2>Create a new to do</h2>
+
+<form action="/item" method="post">
+  <p class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" class="form-control">
+  </p>
+  <p class="form-group">
+    <label for="description">Description:</label>
+    <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
+  </p>
+  <div class="form-row mb-3">
+    <div class="col">
+      <label for="status">Status:</label>
+      <input type="text" name="status" id="status" class="form-control">
+    </div>
+    <div class="col">
+      <label for="priority">Priority (1-5):</label>
+      <input type="text" name="priority" id="priority" class="form-control">
+    </div>
+  </div>
+  <p class="form-group">
+    <input type="submit" value="Save" class="btn btn-primary">
+  </p>
+</form>

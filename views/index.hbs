@@ -1,0 +1,29 @@
+<h2 class="mb-3">Items:</h2>
+
+{{#if success}}
+<p class="alert alert-success">{{success}}</p>
+{{/if}}
+
+{{#if items}}
+<div class="card-deck">
+  {{#each items }}
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{name}}</h5>
+      <p class="card-text">{{description}}</p>
+    </div>
+    <div class="card-footer">
+      <a href="/item/{{id}}" class="card-link">View More</a>
+    </div>
+  </div>
+  {{/each}}
+</div>
+{{/if}}
+
+<div class="card-deck mt-5">
+  <div class="card">
+    <div class="card-body">
+      <a href="/item/new" class="btn btn-success">Add a new to do</a>
+    </div>
+  </div>
+</div>
